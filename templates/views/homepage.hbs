@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Currency Conversion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <center>
+      <h4> Currency Conversion </h4>
+      <form action="/currency-convert" method="POST" id="conversion-form">
+          <label for="from"> From Currency</label>
+          <select id="from-dropdown" name="from" required>
+          </select><br><br>
+          <label for="to"> To Currency</label>
+          <select id="to-dropdown" name="to" required>
+          </select><br><br>
+          <label for="fromAmount"> From Amount </label>
+          <input type="text" id="fromAmount" name="fromAmount" required><br><br>
+          <label for="toAmount"> To Amount </label>
+          <input type="number" readonly id="toAmount" name="toAmount"><br><br>
+          <input type="submit" value="Submit">
+      </form>
+    </center>
+    <script src="js/convertor.js">
+      
+    </script>
+  </body>
+</html>
